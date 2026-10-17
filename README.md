@@ -1,33 +1,34 @@
 # Library-Management-System-SQL
 
-**A SQL Server project that manages a library's records and answers business questions about books, members, employees, branches, issued books, and returns.**
+**A SQL Server project exploring a library database containing related records for books, members, book issues, and returns. Using T-SQL queries, joins, and aggregations, the project examines borrowing activity, rental income, and return-record completeness to demonstrate practical relational database analysis.**
 
 ---
 
 ## Project Overview
 
-**Brief Description**
-A SQL analysis of a library database with six related tables (books, branches, employees, members, issued books, and returns), covering record management, joins, summary tables, and a set of business queries.
-
 **Tools & Skills Used**
-SQL Server, T-SQL, `INSERT` / `UPDATE` / `DELETE`, `INNER JOIN`, `LEFT JOIN`, Self-Join, `GROUP BY` and `HAVING`, Aggregations, `SELECT INTO`, Date Functions.
+Microsoft SQL Server, T-SQL, Relational Databases, SQL Joins, Aggregations, Filtering, Data Analysis.
 
 **Project Goals**
-To manage the library's records with SQL, link the tables together, and find out which books are borrowed most, which categories earn the most rental income, and which books have not been returned.
+To explore relationships between library records, analyse borrowing patterns, examine rental income, and identify records requiring further review.
 
-**Results**
-20 of the 34 issued books had no return record. Classic books earned the most rental income (59.00 across 10 issues), and 6 members borrowed more than one book.
+**Key Findings**
+The analysis identified 20 issued-book records out of 34 that had no matching return record. Classic books generated 59.00 in rental income across 10 issues, while six members had borrowed more than one book.
 
 ---
 
 ## Business Questions
+This project uses SQL Server to explore library operations, book borrowing activity, rental income, member registrations, and employee-branch relationships.
 
-1. Which members borrowed more than one book?
-2. How much rental income does each category earn?
-3. Which members registered recently?
-4. Who manages each employee?
-5. Which books have not been returned?
-
+1. **Book Issuance**: Which book issuance transactions were handled by a specific employee?
+2. **Member Borrowing Activity**: Which members have borrowed more than one book?
+3. **Book Popularity**: How many times has each book been issued?
+4. **Category and Rental Income Analysis**: How does rental income compare across book categories?
+5. **Recent Member Registrations**: Which members registered within the past 1,000 days?
+6. **Employee and Branch Relationships**: How are employees linked to their branches and branch managers?
+7. **Rental Price Analysis**: Which books have rental prices above $7?
+8. **Outstanding Returns**: Which issued books have no matching return record?
+   
 ---
 
 ## Dataset
